@@ -10,7 +10,6 @@ from ros_numpy import numpify
 from tf2_ros import ExtrapolationException
 
 
-
 def read_point_cloud():
     path = 'path/to/your/bag_file'
     bag = rosbag.Bag(path)
