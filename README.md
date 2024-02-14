@@ -4,17 +4,17 @@ This script streamlines the creation of a point cloud along the entire trajector
 
 ## Key Features
 
-1. **ROS Integration:**
+**ROS Integration:**
    - Utilizes ROS functionalities to efficiently handle bag files.
    - Extracts point cloud data from the specified topic ("/points").
 
-2. **TF Library Usage:**
+**TF Library Usage:**
    - Leverages the TF library for smooth management of transformations between coordinate frames.
    - Applies transformation matrices to align lidar data with the "map" coordinate system, ensuring a comprehensive point cloud representation.
 
-3. **Robustness:**
+**Robustness:**
    - Implements robust error-handling mechanisms, including handling ExtrapolationExceptions during TF lookups.
    - Addresses potential exceptions that may arise when reading ROS bag files.
 
-4. **Optimization:**
+**Optimization:**
    - Incorporates optimizations, such as processing every 20th message from the "/points" topic to enhance the efficiency of point cloud construction.
